@@ -1,8 +1,9 @@
 {
   "name": "shell",
   "version": "0.0.0",
-  "author": "Aaron Trostle",
+  "author": "Aaron Trostle <aaron.trostle@gmail.com>",
   "description": "",
+  "license": "MIT",
   "keywords": [],
   "main": "index.js",
   "private": true,
@@ -10,9 +11,14 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "/* react-scripts start */",
-    "build": "/*react-scripts build */",
-    "test": "/* react-scripts test --env=jsdom */"
+    "nuke": "lerna run nuke --parallel && rm -rf ./node_modules",
+    "dev": "lerna run dev --parallel",
+    "prebuild": "yarn clean",
+    "build": "echo \"Base 'build' script is not configured\"  && exit 1",
+    "prebuild:production": "yarn clean",
+    "build:production": "echo \"Base 'build:production' script is not configured\"  && exit 1",
+    "test": "echo \"Base 'test' script is not configured\" && exit 1"
+  },
   "dependencies": {
     "lerna": "^3.20.2"
   }
