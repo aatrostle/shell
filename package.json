@@ -13,5 +13,7 @@
     "start": "/* react-scripts start */",
     "build": "/*react-scripts build */",
     "test": "/* react-scripts test --env=jsdom */"
+  "dependencies": {
+    "lerna": "^3.20.2"
   }
 }
