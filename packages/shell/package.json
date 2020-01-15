@@ -1,8 +1,9 @@
 {
   "name": "shell",
   "version": "0.0.0",
-  "author": "Aaron Trostle",
+  "author": "Aaron Trostle <aaron.trostle@gmail.com>",
   "description": "",
+  "license": "MIT",
   "keywords": [],
   "main": "index.js",
   "dependencies": {
@@ -19,9 +20,23 @@
     "react-scripts": "^3.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+   "clean": "rm -rf build",
+    "nuke": "rm -rf ./node_modules",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
