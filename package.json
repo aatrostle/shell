@@ -11,6 +11,7 @@
     "packages/*"
   ],
   "scripts": {
+    "new": "./config/new.sh",
     "clean": "lerna run clean --parallel",
     "nuke": "lerna run nuke --parallel && rm -rf ./node_modules",
     "dev": "lerna run dev --parallel",
